@@ -1,2 +1,6 @@
-<h3>(AppComponent) Text: {{text}}</h3>
-<app-component-b></app-component-b>
+<h1>Players</h1>
+<table>
+    <tr><th>Name</th><th>Years</th><th>Years + 5</th></tr>
+    <tr [id]="n.name" *ngFor="let n of players"> <td>{{n.name}}</td> <td>{{n.years}}</td> <td>{{n.years | plusFive}}</td></tr> 
+</table>
+<p>Current Date: {{date | date: 'dd.MM.yyyy'}}</p>
